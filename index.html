@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark & Flow</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #8e2de2, #f27121);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #f5f5f5;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .button {
+      display: inline-block;
+      background: #8e2de2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLang('uk');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Spark & Flow</h1>
+    <div class="lang-switch">
+      <button onclick="switchLang('uk')">УКР</button>
+      <button onclick="switchLang('en')">EN</button>
+    </div>
+  </header>
+  <nav>
+    <a href="#about">Про мене</a>
+    <a href="#services">Послуги</a>
+    <a href="#reviews">Відгуки</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <div data-lang="uk">
+        <h2>Про мене</h2>
+        <p>Тут буде твій текст про тебе українською мовою.</p>
+      </div>
+      <div data-lang="en" style="display:none;">
+        <h2>About Me</h2>
+        <p>Here you can write your story in English.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div data-lang="uk">
+        <h2>Послуги</h2>
+        <ul>
+          <li>Аудит бізнесу / соцмереж</li>
+          <li>Стратегія просування</li>
+          <li>Креативні рішення для бренду</li>
+        </ul>
+      </div>
+      <div data-lang="en" style="display:none;">
+        <h2>Services</h2>
+        <ul>
+          <li>Business/Social media audit</li>
+          <li>Promotion strategy</li>
+          <li>Creative brand development</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div data-lang="uk">
+        <h2>Відгуки</h2>
+        <p>Додай тут кілька цитат або історій клієнтів.</p>
+      </div>
+      <div data-lang="en" style="display:none;">
+        <h2>Reviews</h2>
+        <p>Insert some client quotes or success stories here.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div data-lang="uk">
+        <h2>Контакти</h2>
+        <p>Натисни, щоб написати в Telegram:</p>
+        <a class="button" href="#" target="_blank">Telegram</a>
+      </div>
+      <div data-lang="en" style="display:none;">
+        <h2>Contact</h2>
+        <p>Click below to message me in Telegram:</p>
+        <a class="button" href="#" target="_blank">Telegram</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Spark & Flow — твій простір для зростання</p>
+  </footer>
+</body>
+</html>
