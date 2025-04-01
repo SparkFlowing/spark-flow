@@ -6,8 +6,8 @@
   <title>Spark & Flow</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       background: #fdfdfd;
       color: #333;
     }
@@ -29,13 +29,8 @@
       text-decoration: none;
       color: #333;
     }
-    .lang-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
       padding: 40px 20px;
     }
@@ -58,92 +53,43 @@
       color: #777;
     }
   </style>
-  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
-      });
-    }
-    window.onload = () => switchLang('uk');
-  </script>
 </head>
 <body>
   <header>
     <h1>Spark & Flow</h1>
-    <p>Твій простір для просування малого бізнесу</p>
-    <div class="lang-switch">
-      <button onclick="switchLang('uk')">УКР</button>
-      <button onclick="switchLang('en')">EN</button>
-    </div>
+    <p>Креативна підтримка малого бізнесу</p>
   </header>
 
   <nav>
     <a href="#about">Про мене</a>
     <a href="#services">Послуги</a>
-    <a href="#reviews">Відгуки</a>
     <a href="#contact">Контакти</a>
   </nav>
 
   <div class="container">
-
     <section id="about">
-      <div data-lang="uk">
-        <h2>Про мене</h2>
-        <p>Привіт! Я допомагаю малому бізнесу знайти свій голос в онлайн-світі. Моє завдання — розкрити потенціал твоєї справи через творчі стратегії просування.</p>
-      </div>
-      <div data-lang="en" style="display:none;">
-        <h2>About Me</h2>
-        <p>Hello! I help small businesses find their voice online. My mission is to unlock your potential with creative marketing strategies.</p>
-      </div>
+      <h2>Про мене</h2>
+      <p>Я допомагаю малому бізнесу звучати, виглядати й просуватися професійно. Від ідентики до просування — усе в одному місці, з душею та креативом.</p>
     </section>
 
     <section id="services">
-      <div data-lang="uk">
-        <h2>Послуги</h2>
-        <ul>
-          <li>Аналіз соцмереж та бренду</li>
-          <li>Індивідуальна стратегія просування</li>
-          <li>Оформлення профілю, дизайн, візуал</li>
-        </ul>
-      </div>
-      <div data-lang="en" style="display:none;">
-        <h2>Services</h2>
-        <ul>
-          <li>Social media and brand audit</li>
-          <li>Custom promotion strategy</li>
-          <li>Profile styling, visual design</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="reviews">
-      <div data-lang="uk">
-        <h2>Відгуки</h2>
-        <p>“Результати вже через тиждень! Дякую за натхнення і підтримку.”</p>
-      </div>
-      <div data-lang="en" style="display:none;">
-        <h2>Reviews</h2>
-        <p>“Saw results in just a week! Thank you for your inspiration and support.”</p>
-      </div>
+      <h2>Послуги</h2>
+      <ul>
+        <li>Брендинг і логотип</li>
+        <li>Оформлення соцмереж</li>
+        <li>Консультації з просування</li>
+      </ul>
     </section>
 
     <section id="contact">
-      <div data-lang="uk">
-        <h2>Контакти</h2>
-        <p>Готова допомогти твоєму бізнесу зростати! Напиши мені:</p>
-        <a class="button" href="https://t.me/ТВОЙ_НІК" target="_blank">Написати в Telegram</a>
-      </div>
-      <div data-lang="en" style="display:none;">
-        <h2>Contact</h2>
-        <p>Ready to help your business grow! Message me here:</p>
-        <a class="button" href="https://t.me/ТВОЙ_НІК" target="_blank">Message on Telegram</a>
-      </div>
+      <h2>Контакти</h2>
+      <p>Напиши мені в Telegram, щоб почати співпрацю:</p>
+      <a class="button" href="https://t.me/твій_нік" target="_blank">Написати</a>
     </section>
-
   </div>
 
   <footer>
-    <p>&copy; Spark & Flow — твій простір для зростання 💫</p>
+    <p>&copy; 2025 Spark & Flow — твій бренд, твій стиль, твій голос</p>
   </footer>
 </body>
 </html>
