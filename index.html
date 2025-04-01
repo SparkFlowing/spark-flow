@@ -6,15 +6,15 @@
   <title>Spark & Flow</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
       background: #fdfdfd;
       color: #333;
     }
     header {
       background: linear-gradient(to right, #8e2de2, #f27121);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
     nav {
@@ -22,12 +22,12 @@
       justify-content: center;
       gap: 20px;
       background: #f5f5f5;
-      padding: 10px;
+      padding: 12px;
+      font-weight: bold;
     }
     nav a {
       text-decoration: none;
       color: #333;
-      font-weight: bold;
     }
     .lang-switch {
       position: absolute;
@@ -35,22 +35,26 @@
       right: 20px;
     }
     .container {
-      padding: 40px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 60px;
     }
     .button {
       display: inline-block;
+      padding: 12px 24px;
       background: #8e2de2;
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
     }
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
+      background: #f5f5f5;
       color: #777;
     }
   </style>
@@ -66,11 +70,13 @@
 <body>
   <header>
     <h1>Spark & Flow</h1>
+    <p>Твій простір для просування малого бізнесу</p>
     <div class="lang-switch">
       <button onclick="switchLang('uk')">УКР</button>
       <button onclick="switchLang('en')">EN</button>
     </div>
   </header>
+
   <nav>
     <a href="#about">Про мене</a>
     <a href="#services">Послуги</a>
@@ -79,14 +85,15 @@
   </nav>
 
   <div class="container">
+
     <section id="about">
       <div data-lang="uk">
         <h2>Про мене</h2>
-        <p>Тут буде твій текст про тебе українською мовою.</p>
+        <p>Привіт! Я допомагаю малому бізнесу знайти свій голос в онлайн-світі. Моє завдання — розкрити потенціал твоєї справи через творчі стратегії просування.</p>
       </div>
       <div data-lang="en" style="display:none;">
         <h2>About Me</h2>
-        <p>Here you can write your story in English.</p>
+        <p>Hello! I help small businesses find their voice online. My mission is to unlock your potential with creative marketing strategies.</p>
       </div>
     </section>
 
@@ -94,17 +101,17 @@
       <div data-lang="uk">
         <h2>Послуги</h2>
         <ul>
-          <li>Аудит бізнесу / соцмереж</li>
-          <li>Стратегія просування</li>
-          <li>Креативні рішення для бренду</li>
+          <li>Аналіз соцмереж та бренду</li>
+          <li>Індивідуальна стратегія просування</li>
+          <li>Оформлення профілю, дизайн, візуал</li>
         </ul>
       </div>
       <div data-lang="en" style="display:none;">
         <h2>Services</h2>
         <ul>
-          <li>Business/Social media audit</li>
-          <li>Promotion strategy</li>
-          <li>Creative brand development</li>
+          <li>Social media and brand audit</li>
+          <li>Custom promotion strategy</li>
+          <li>Profile styling, visual design</li>
         </ul>
       </div>
     </section>
@@ -112,30 +119,31 @@
     <section id="reviews">
       <div data-lang="uk">
         <h2>Відгуки</h2>
-        <p>Додай тут кілька цитат або історій клієнтів.</p>
+        <p>“Результати вже через тиждень! Дякую за натхнення і підтримку.”</p>
       </div>
       <div data-lang="en" style="display:none;">
         <h2>Reviews</h2>
-        <p>Insert some client quotes or success stories here.</p>
+        <p>“Saw results in just a week! Thank you for your inspiration and support.”</p>
       </div>
     </section>
 
     <section id="contact">
       <div data-lang="uk">
         <h2>Контакти</h2>
-        <p>Натисни, щоб написати в Telegram:</p>
-        <a class="button" href="#" target="_blank">Telegram</a>
+        <p>Готова допомогти твоєму бізнесу зростати! Напиши мені:</p>
+        <a class="button" href="https://t.me/ТВОЙ_НІК" target="_blank">Написати в Telegram</a>
       </div>
       <div data-lang="en" style="display:none;">
         <h2>Contact</h2>
-        <p>Click below to message me in Telegram:</p>
-        <a class="button" href="#" target="_blank">Telegram</a>
+        <p>Ready to help your business grow! Message me here:</p>
+        <a class="button" href="https://t.me/ТВОЙ_НІК" target="_blank">Message on Telegram</a>
       </div>
     </section>
+
   </div>
 
   <footer>
-    <p>&copy; Spark & Flow — твій простір для зростання</p>
+    <p>&copy; Spark & Flow — твій простір для зростання 💫</p>
   </footer>
 </body>
 </html>
